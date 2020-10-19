@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <button class="btn btn-start">Start new game</button>
+        <button class="btn btn-reload">Play Again</button>
+        <div class="field">
+            <button class="btn btn-skip">Skip question</button>
+            <p class="question">
+                Question
+            </p>
+            <ul class="answers">
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+            </ul>
+            <div class="statistics">
+                <div class="total-prize">
+                    Total prize 
+                    <span class="total-money money"></span>
+                </div>
+                <div class="round-prize">
+                    Prize on current round 
+                    <span class="round-money money"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+    
+    <script>new Game();</script>
+</body>
+
+</html>
